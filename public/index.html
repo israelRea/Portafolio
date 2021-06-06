@@ -7,14 +7,24 @@
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="website portfolio create with react"
     />
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <script src="https://kit.fontawesome.com/f639ebedaa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/thinline.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="manifest" href="/manifest.json" />
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -24,11 +34,99 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>Israel Rea</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <script>
+    </script>
+    <header class="header" id="header">
+      <nav class="nav container">
+          <a href="/"> <img class="logo" src="rtlogo_b_t.png" alt=""></img></a>
+        <div class="nav_menu" id="nav-menu">
+          <ul class="nav_list grid">
+            <li class="nav_item">
+              <a href="#home" class="nav_link">
+                <i class="fas fa-home nav_icon"></i>Inicio
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#about" class="nav_link">
+                <i class="fas fa-user nav_icon"></i> Acerca de
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#skills" class="nav_link">
+                <i class="fas fa-file-alt nav_icon"></i> Skills
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#carrer" class="nav_link">
+                <i class="fas fa-briefcase nav_icon"></i> Carrera
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#services" class="nav_link">
+                <i class="fas fa-briefcase nav_icon"></i> Servicios
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#portfolio" class="nav_link">
+                <i class="fas fa-image nav_icon"></i> Portafolio
+              </a>
+            </li>
+            <li class="nav_item">
+              <a href="#contact" class="nav_link">
+                <i class="fas fa-paper-plane nav_icon"></i> Contactame
+              </a>
+            </li>
+          </ul>
+          <i class="fas fa-times nav_close" id="nav-close"></i>
+        </div>
+        <div class="nav_btns">
+          <i class="far fa-moon change-theme" id="theme-button"></i>
+
+          <div class="nav_toggle" id="nav-toggle">
+            <i class="fas fa-th-large"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
     <div id="root"></div>
+    <footer class="footer">
+      <div class="footer_bg">
+        <div class="footer_container container grid">
+          <div>
+            <a href="#" class="nav_logo">
+              <a href="/"> <img class="logo" src="rtlogo_w_t.png" alt=""></img></a></a>
+          </div>
+   
+          <ul class="footer_links">
+            <li>
+              <a href="#services" class="footer_link">Servicios</a>
+            </li>
+            <li>
+              <a href="#portfolio" class="footer_link">Portafolio</a>
+            </li>
+            <li>
+              <a href="#qualifications" class="footer_link">Carrera</a>
+            </li>
+            <li>
+              <a href="#skills" class="footer_link">Skills</a>
+            </li>
+            <li>
+              <a href="#contact" class="footer_link">Contactame</a>
+            </li>
+          </ul>
+        </div>
+        <p clas="footer_copy">&#169; ReaTechnologiesMX. All rights reserved.</p>
+      </div>
+    </footer>
+    <a href="#" class="scrollup" id="scroll-up">
+        <i src="fas fa-arrow-up scrollup_icon"></i>
+    </a>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
