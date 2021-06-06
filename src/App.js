@@ -11,7 +11,7 @@ import "swiper/components/effect-coverflow/effect-coverflow.min.css";
 import "swiper/components/pagination/pagination.min.css";
 // import Swiper core and required modules
 import SwiperCore, { EffectCoverflow, Pagination } from "swiper/core";
-
+import emailjs from 'emailjs-com';
 // install Swiper modules
 SwiperCore.use([EffectCoverflow, Pagination]);
 
@@ -79,17 +79,22 @@ tabs.forEach((tab) => {
  
 
 function App() {
+
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  }
+
   return (
     //================== MAIN ========================
     <main className="Main">
-      {mainPage()}
-      {aboutMe()}
-      {my_skills()}
-      {my_qualifications()}
-      {my_services()}
-      {my_portfolio()}
-      {project_in_mind()}
-      {contactme()}
+     
     </main>
   );
 }
