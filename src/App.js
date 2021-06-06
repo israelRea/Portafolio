@@ -94,7 +94,14 @@ function App() {
   return (
     //================== MAIN ========================
     <main className="Main">
-     
+      {mainPage()}
+      {aboutMe()}
+      {my_skills()}
+      {my_qualifications()}
+      {my_services()}
+      {my_portfolio()}
+      {project_in_mind()}
+      {contactme()}
     </main>
   );
 }
