@@ -81,6 +81,46 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById("root")
 );
+/*==================== ACCORDION SKILLS ====================*/
+const skillsContent = document.getElementsByClassName("skills_content");
+const skillsHeader = document.querySelectorAll(".skills_head");
+
+function toggleSkills() {
+  console.log("click");
+  let itemClass = this.parentNode.className;
+
+  for (var i = 0; i < skillsContent.length; i++) {
+    skillsContent[i].className = "skills_content skills_close";
+  }
+
+  if (itemClass === "skills_content skills_close") {
+    this.parentNode.className = "skills_content skills_open";
+  }
+}
+
+skillsHeader.forEach((el) => {
+  el.addEventListener("click", toggleSkills);
+});
+/*==================== QUALIFICATIONS TAB ====================*/
+const tabs = document.querySelectorAll("[data-target]"),
+tabContents = document.querySelectorAll("[data-content]");
+
+tabs.forEach((tab) => {
+tab.addEventListener("click", () => {
+  console.log("clicked");
+  const target = document.querySelector(tab.dataset.target);
+
+  tabContents.forEach((tabContent) => {
+    tabContent.classList.remove("qualifications_active");
+  });
+  target.classList.add("qualifications_active");
+
+  tabs.forEach((tab) => {
+    tab.classList.remove("qualifications_active");
+  });
+  tab.classList.add("qualifications_active");
+});
+}); 
 /*==================== SERVICE MODAL ====================*/
 const modalViews = document.querySelectorAll(".services_modal"),
   modalBtns = document.querySelectorAll(".services_button"),
