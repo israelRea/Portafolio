@@ -15,82 +15,9 @@ import emailjs from 'emailjs-com';
 // install Swiper modules
 SwiperCore.use([EffectCoverflow, Pagination]);
 
-/*==================== ACCORDION SKILLS ====================*/
-const skillsContent = document.getElementsByClassName("skills_content");
-const skillsHeader = document.querySelectorAll(".skills_head");
 
-function toggleSkills() {
-  console.log("click");
-  let itemClass = this.parentNode.className;
-
-  for (var i = 0; i < skillsContent.length; i++) {
-    skillsContent[i].className = "skills_content skills_close";
-  }
-
-  if (itemClass === "skills_content skills_close") {
-    this.parentNode.className = "skills_content skills_open";
-  }
-}
-
-skillsHeader.forEach((el) => {
-  el.addEventListener("click", toggleSkills);
-});
-
-/*==================== QUALIFICATIONS TAB ====================*/
-const tabs = document.querySelectorAll("[data-target]"),
-  tabContents = document.querySelectorAll("[data-content]");
-
-tabs.forEach((tab) => {
-  tab.addEventListener("click", () => {
-    const target = document.querySelector(tab.dataset.target);
-
-    tabContents.forEach((tabContent) => {
-      tabContent.classList.remove("qualifications_active");
-    });
-    target.classList.add("qualifications_active");
-
-    tabs.forEach((tab) => {
-      tab.classList.remove("qualifications_active");
-    });
-    tab.classList.add("qualifications_active");
-  });
-});
-
- /*==================== SERVICE MODAL ====================*/
-  const modalViews = document.querySelectorAll('.services_modal'),
-  modalBtns = document.querySelectorAll('.services_button'),
-  modalCloses = document.querySelectorAll('.services_modal-close')
-  
-  let modal = function(modalClick){
-  modalViews[modalClick].classList.add('active-modal')
-  }
-  modalBtns.forEach((modalBtn,i) =>{
-  modalBtn.addEventListener('click', () => {
-    modal(i)
-  })
-  })
-  modalCloses.forEach((modalClose) => {
-  modalClose.addEventListener('click', () =>{
-    modalViews.forEach((modalView) => {
-      modalView.classList.remove('active-modal')
-    })
-  })
-  })
- 
 
 function App() {
-
-  function sendEmail(e) {
-    e.preventDefault();
-
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
-  }
-
   return (
     //================== MAIN ========================
     <main className="Main">
@@ -256,6 +183,27 @@ function aboutMe() {
 }
 
 function my_skills() {
+/*==================== ACCORDION SKILLS ====================*/
+/*const skillsContent = document.getElementsByClassName("skills_content");
+const skillsHeader = document.querySelectorAll(".skills_head");
+
+function toggleSkills() {
+  console.log("click");
+  let itemClass = this.parentNode.className;
+
+  for (var i = 0; i < skillsContent.length; i++) {
+    skillsContent[i].className = "skills_content skills_close";
+  }
+
+  if (itemClass === "skills_content skills_close") {
+    this.parentNode.className = "skills_content skills_open";
+  }
+}
+
+skillsHeader.forEach((el) => {
+  el.addEventListener("click", toggleSkills);
+});*/
+
   return (
     <section className="skills section" id="skills">
       <h2 className="section_title">Skills</h2>
@@ -653,6 +601,25 @@ function my_skills() {
 }
 
 function my_qualifications() {
+  /*==================== QUALIFICATIONS TAB ====================*/
+const tabs = document.querySelectorAll("[data-target]"),
+tabContents = document.querySelectorAll("[data-content]");
+
+tabs.forEach((tab) => {
+tab.addEventListener("click", () => {
+  const target = document.querySelector(tab.dataset.target);
+
+  tabContents.forEach((tabContent) => {
+    tabContent.classList.remove("qualifications_active");
+  });
+  target.classList.add("qualifications_active");
+
+  tabs.forEach((tab) => {
+    tab.classList.remove("qualifications_active");
+  });
+  tab.classList.add("qualifications_active");
+});
+});
   return (
     <section className="qualifications section" id="qualifications">
       <h2 className="section_title" id="carrer">
@@ -778,7 +745,7 @@ function my_qualifications() {
             </div>
             {/*================== certifications ========================*/}
             <div className="qualification_data">
-              <div id="education">
+              <div>
                 <h3 className="qualification_title">
                   <i class="fas fa-stamp certifications-icon"></i>
                   Certificaciones
@@ -956,6 +923,27 @@ function my_qualifications() {
   );
 }
 function my_services() {
+   /*==================== SERVICE MODAL ====================*/
+   const modalViews = document.querySelectorAll('.services_modal'),
+   modalBtns = document.querySelectorAll('.services_button'),
+   modalCloses = document.querySelectorAll('.services_modal-close')
+   
+   let modal = function(modalClick){
+   modalViews[modalClick].classList.add('active-modal')
+   }
+   modalBtns.forEach((modalBtn,i) =>{
+   modalBtn.addEventListener('click', () => {
+     modal(i)
+   })
+   })
+   modalCloses.forEach((modalClose) => {
+   modalClose.addEventListener('click', () =>{
+     modalViews.forEach((modalView) => {
+       modalView.classList.remove('active-modal')
+     })
+   })
+   })
+  
   return (
     <section className="services section" id="services">
       <h2 className="section_title">Servicios</h2>
