@@ -37,11 +37,12 @@ navLink.forEach((n) => n.addEventListener("click", linkAction));
 const themeButton = document.getElementById("theme-button");
 
 let _img = document.querySelector("img");
-
 const darkTheme = "dark-theme";
 const iconTheme = "fa-sun";
+
 const selectedTheme = localStorage.getItem("selected-theme");
 const selectedIcon = localStorage.getItem("selected-icon");
+
 
 const getCurrentTheme = () =>
   document.body.classList.contains(darkTheme) ? "dark" : "light";
@@ -55,25 +56,37 @@ if (selectedTheme) {
   themeButton.classList[selectedIcon === "fa-moon" ? "add" : "remove"](
     iconTheme
   );
+  console.log(getCurrentTheme())
+  if (getCurrentTheme() === 'dark') {
+    _img.src = "rtlogo_w_t.png";
+   
+  } else {
+    _img.src = "rtlogo_b_t.png";
+ 
+  }
 }
 
 function change_logo() {
-  console.log(getCurrentTheme());
-  if (getCurrentTheme() === "dark") {
-    _img.src = "rtlogo_b_t.png";
-  } else {
+  if (getCurrentTheme() === 'dark') {
     _img.src = "rtlogo_w_t.png";
+  } else {
+    _img.src = "rtlogo_b_t.png";
   }
 }
 themeButton.addEventListener("click", () => {
-  change_logo();
+
+  console.log("================")
+  console.log(darkTheme)
+  console.log(iconTheme)
+  console.log("================")
 
   document.body.classList.toggle(darkTheme);
   themeButton.classList.toggle(iconTheme);
+  change_logo();
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
+ 
 });
-
 /*==================== RENDER APP CONTENT ====================*/
 ReactDOM.render(
   <React.StrictMode>
