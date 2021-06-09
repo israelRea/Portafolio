@@ -168,6 +168,7 @@
 .skills_arrow {
   margin-left: auto;
   transition: 0.4s;
+  color: var(--text-color);
 }
 .skills_titles {
   display: flex;

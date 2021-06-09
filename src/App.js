@@ -234,12 +234,12 @@ function my_skills() {
             <div class="skills_data">
               <div class="skills_titles">
                 <h3 class="skills_name">Kotlin</h3>
-                <span class="skills_number">40%</span>
+                <span class="skills_number">70%</span>
               </div>
               <div class="skills_bar">
                 <span
                   class="skills_percentage skills_html"
-                  style={{ width: "40%" }}
+                  style={{ width: "70%" }}
                 ></span>
               </div>
             </div>
