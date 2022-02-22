@@ -150,19 +150,19 @@ function aboutMe() {
           </p>
           <div class="about_info">
             <div>
-              <span class="about_info-title">2</span>
+              <span class="about_info-title">3</span>
               <span class="about_info-name">
                 Años<br></br> Experiencia
               </span>
             </div>
             <div>
-              <span class="about_info-title">1</span>
+              <span class="about_info-title">3</span>
               <span class="about_info-name">
                 Compañia<br></br>donde he trabajado
               </span>
             </div>
             <div>
-              <span class="about_info-title">03+</span>
+              <span class="about_info-title">05+</span>
               <span class="about_info-name">
                 Proyectos<br></br> Completados
               </span>
