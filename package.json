@@ -1,9 +1,9 @@
 {
   "name": "react-portfolio",
   "version": "0.1.0",
-  "homepage": "",
+  "homepage": "http://{github-username}.github.io/{repo-name}",
   "description": "A clean and customizable ReactJS portfolio template for fellow developers. Credits to Jo Lienhoop!",
-  "repository": "https://github.com/taniyow/react-portfolio",
+  "repository":"http://{github-username}.github.io/{repo-name}",
   "author": "Isra Rea <ing.israelrea@gmail.com>",
   "license": "MIT",
   "dependencies": {
@@ -35,6 +35,8 @@
     "use-dencrypt-effect": "1.0.1"
   },
   "scripts": {
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build && react-snapshot",
     "test": "react-scripts test",

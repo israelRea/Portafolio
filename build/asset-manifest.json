@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/%7Brepo-name%7D/static/css/main.374314ed.css",
+    "main.js": "/%7Brepo-name%7D/static/js/main.5b4555df.js",
+    "static/js/333.ff23a92f.chunk.js": "/%7Brepo-name%7D/static/js/333.ff23a92f.chunk.js",
+    "static/media/profile.png": "/%7Brepo-name%7D/static/media/profile.900915c73ad1b705dd23.png",
+    "static/media/castme.png": "/%7Brepo-name%7D/static/media/castme.70cbe3a88f352e6889cc.png",
+    "static/media/hebo.png": "/%7Brepo-name%7D/static/media/hebo.08aa78d90ec325f0f022.png",
+    "static/media/crecer.png": "/%7Brepo-name%7D/static/media/crecer.876cd5e9df66bf4b5cdf.png",
+    "static/media/scanhub.png": "/%7Brepo-name%7D/static/media/scanhub.c8c89314fc10b76dbe4b.png",
+    "static/media/react-portfolio.png": "/%7Brepo-name%7D/static/media/react-portfolio.8b57f81f1dc41139b3e4.png",
+    "static/media/esp_lang_img.png": "/%7Brepo-name%7D/static/media/esp_lang_img.d3a81fa5481e47d8ebd4.png",
+    "static/media/CV_Spanish.pdf": "/%7Brepo-name%7D/static/media/CV_Spanish.79ae6707c90a44a43bf0.pdf",
+    "static/media/CV_English.pdf": "/%7Brepo-name%7D/static/media/CV_English.fdddb53bd8a3ae6c2681.pdf",
+    "index.html": "/%7Brepo-name%7D/index.html",
+    "static/media/getFetch.cjs": "/%7Brepo-name%7D/static/media/getFetch.40f37ddea2378391108f.cjs",
+    "main.374314ed.css.map": "/%7Brepo-name%7D/static/css/main.374314ed.css.map",
+    "main.5b4555df.js.map": "/%7Brepo-name%7D/static/js/main.5b4555df.js.map",
+    "333.ff23a92f.chunk.js.map": "/%7Brepo-name%7D/static/js/333.ff23a92f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.374314ed.css",
+    "static/js/main.5b4555df.js"
+  ]
+}
