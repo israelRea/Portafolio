@@ -1,10 +1,10 @@
 {
   "name": "react-portfolio",
   "version": "0.1.0",
-  "homepage": "http://{github-username}.github.io/{repo-name}",
+  "homepage": "",
   "description": "A clean and customizable ReactJS portfolio template for fellow developers. Credits to Jo Lienhoop!",
   "repository": "https://github.com/taniyow/react-portfolio",
-  "author": "Isra Rea <ing.israelrea@gmail.com>",
+  "author": "Mark Tan <markcmtan@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
@@ -15,16 +15,15 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "classnames": "^2.2.6",
-    "detect-browser-language": "^0.0.2",
-    "i18next": "^22.1.4",
+    "i18next": "^22.4.9",
     "i18next-browser-languagedetector": "^7.0.1",
-    "i18next-http-backend": "^2.0.2",
+    "i18next-http-backend": "^2.1.1",
     "ios-inner-height": "^1.1.1",
     "popmotion": "^8.7.3",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
     "react-helmet": "^6.1.0",
-    "react-i18next": "^12.1.1",
+    "react-i18next": "^12.1.4",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^5.0.1",
     "react-snapshot": "^1.0.4",
@@ -35,8 +34,6 @@
     "use-dencrypt-effect": "1.0.1"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build && react-snapshot",
     "test": "react-scripts test",
@@ -64,7 +61,6 @@
     ]
   },
   "devDependencies": {
-    "emailjs": "^4.0.0",
-    "gh-pages": "^4.0.0"
+    "emailjs": "^4.0.0"
   }
 }
