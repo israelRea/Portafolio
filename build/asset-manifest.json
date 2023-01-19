@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Portafolio/static/css/main.374314ed.css",
+    "main.js": "/Portafolio/static/js/main.1fc1eddc.js",
+    "static/js/333.ff23a92f.chunk.js": "/Portafolio/static/js/333.ff23a92f.chunk.js",
+    "static/media/profile.png": "/Portafolio/static/media/profile.900915c73ad1b705dd23.png",
+    "static/media/castme.png": "/Portafolio/static/media/castme.70cbe3a88f352e6889cc.png",
+    "static/media/hebo.png": "/Portafolio/static/media/hebo.08aa78d90ec325f0f022.png",
+    "static/media/crecer.png": "/Portafolio/static/media/crecer.876cd5e9df66bf4b5cdf.png",
+    "static/media/scanhub.png": "/Portafolio/static/media/scanhub.c8c89314fc10b76dbe4b.png",
+    "static/media/react-portfolio.png": "/Portafolio/static/media/react-portfolio.8b57f81f1dc41139b3e4.png",
+    "static/media/esp_lang_img.png": "/Portafolio/static/media/esp_lang_img.d3a81fa5481e47d8ebd4.png",
+    "static/media/CV_Spanish.pdf": "/Portafolio/static/media/CV_Spanish.79ae6707c90a44a43bf0.pdf",
+    "static/media/CV_English.pdf": "/Portafolio/static/media/CV_English.fdddb53bd8a3ae6c2681.pdf",
+    "index.html": "/Portafolio/index.html",
+    "static/media/getFetch.cjs": "/Portafolio/static/media/getFetch.40f37ddea2378391108f.cjs",
+    "main.374314ed.css.map": "/Portafolio/static/css/main.374314ed.css.map",
+    "main.1fc1eddc.js.map": "/Portafolio/static/js/main.1fc1eddc.js.map",
+    "333.ff23a92f.chunk.js.map": "/Portafolio/static/js/333.ff23a92f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.374314ed.css",
+    "static/js/main.1fc1eddc.js"
+  ]
+}
